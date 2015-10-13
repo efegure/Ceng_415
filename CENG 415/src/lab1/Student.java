@@ -4,12 +4,15 @@ import java.util.List;
 
 public class Student {
 	private String Name;
+	private int Id;
 	private List<Lecture> LectureList;
+	private Department Department;
 
-	public Student(String name, List<Lecture> lectureList) {
+	public Student(String name, List<Lecture> lectureList,Department department) {
 		super();
 		Name = name;
 		LectureList = lectureList;
+		Department = department;
 	}
 
 	public String getName() {
@@ -31,4 +34,21 @@ public class Student {
 			Lecture newLecture) {
 		LectureList.add(newLecture);
 	}
+
+	public lab1.Department getDepartment() {
+		return Department;
+	}
+
+	public void setDepartment(lab1.Department department) {
+		Department = department;
+	}
+
+	public int getId() {
+		return Id;
+	}
+
+	public void setId(int id) {
+		Id = id;
+	}
+	
 }

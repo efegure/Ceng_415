@@ -44,5 +44,7 @@ public abstract class Instructor {
 			Lecture newLecture) {
 		LectureList.add(newLecture);
 	}
-
+	public void getStudentAmount(List<Lecture> LectureList){
+		
+	}
 }

@@ -6,11 +6,12 @@ import java.util.List;
 public class Department {
 	private String Name;
 	private List<Instructor> InstructorList = new ArrayList<Instructor>();
+	private List<Student> StudentList = new ArrayList<Student>();
+	private List<Lecture> LectureList = new ArrayList<Lecture>();
 
-	public Department(String name, List<Instructor> instructorList) {
+	public Department(String name) {
 		super();
 		Name = name;
-		InstructorList = instructorList;
 	}
 
 	public String getName() {
@@ -29,5 +30,16 @@ public class Department {
 	}
 	public void addInstructor(List<Instructor> instructorList,Instructor newInstructor){
 		instructorList.add(newInstructor);
+	}
+
+	public List<Student> getStudentList() {
+		return StudentList;
+	}
+	public void addStudent(List<Student> studentList,Student newStudent){
+		StudentList.add(newStudent);
+	}
+
+	public List<Lecture> getLectureList() {
+		return LectureList;
 	}
 }
